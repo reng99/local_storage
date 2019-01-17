@@ -5,3 +5,7 @@
 > 使用
 
 `npm i @pangjiaming/local_storage`
+
+### LICENSE
+
+MIT
