@@ -1,5 +1,6 @@
 [![](https://img.shields.io/github/issues/reng99/local_storage.svg)](https://github.com/reng99/local_storage/issues)
 [![](https://img.shields.io/github/license/reng99/local_storage.svg)](https://github.com/reng99/local_storage/blob/master/LICENSE)
+[![Build Status](https://www.travis-ci.org/reng99/local_storage.svg?branch=master)](https://www.travis-ci.org/reng99/local_storage)
 
 ## local storage
 
