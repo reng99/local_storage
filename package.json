@@ -1,6 +1,6 @@
 {
   "name": "@pangjiaming/local_storage",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "handle local storage",
   "main": "index.js",
   "scripts": {
