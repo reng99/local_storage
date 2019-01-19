@@ -10,7 +10,10 @@
     "type": "git",
     "url": "git+https://github.com/reng99/local_storage.git"
   },
-  "keywords": [],
+  "keywords": [
+    "localstorage",
+    "mini"
+  ],
   "author": "reng99",
   "license": "MIT",
   "bugs": {
