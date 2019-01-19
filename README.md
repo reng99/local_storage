@@ -8,9 +8,11 @@
 
 ### 使用
 
-1. 安装 `npm i @pangjiaming/local_storage`
+1. 安装 `npm i @pangjiaming/local_storage --save`
 
-2. 调用方法
+2. 在vue的工程项目中使用：`import { setAppointStore, getAppointStore, removeAppointStore, removeAllStore } from '@pangjiaming/local_storage'`
+
+3. 调用方法
 
 ```javascript
 // setAppointStore 存储指定的localstorage
