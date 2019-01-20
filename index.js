@@ -10,7 +10,7 @@
         }catch(e){
             data = storage[key];
         }
-        if(typeof data === 'object' && (Date.now() > data.expiry || data.Isclean)){
+        if(typeof data === "object" && (Date.now() > data.expiry || data.Isclean)){
             window.localStorage.removeItem(key);
         }
     }
@@ -23,21 +23,21 @@
 let createExpiry = (val) => {
     if(!val) return;
     let integer = parseInt(val);
-    let unit = val.replace(integer, '');
+    let unit = val.replace(integer, "");
     switch(unit){
-        case 'd': integer = integer * 24 * 60 * 60 * 1000;
+        case "d": integer = integer * 24 * 60 * 60 * 1000;
             break;
-        case 'h': integer = integer * 60 * 60 * 1000;
+        case "h": integer = integer * 60 * 60 * 1000;
             break;
-        case 'm': integer = integer * 60 * 1000;
+        case "m": integer = integer * 60 * 1000;
             break;
-        case 's': integer = integer * 1000;
+        case "s": integer = integer * 1000;
             break;
-        default: console.log('您传入的参数不符合规则，请重新输入。');
+        default: console.log("您传入的参数不符合规则，请重新输入。");
             break;
     }
     return Date.now() + integer;
-}
+};
 
 /**
  * @method setAppointStore 存储指定的localstorage
@@ -51,9 +51,9 @@ export const setAppointStore = ({key, value, options}) => {
         value: value,
         expiry: options ? createExpiry(options.expiry) : null,
         Isclean: options ? options.isRefresh : false
-    }
+    };
     window.localStorage.setItem(key, JSON.stringify(content));
-}
+};
 
 /**
  * @method getAppointStore 获取指定的键值对
@@ -72,20 +72,20 @@ export const getAppointStore = ({key}) => {
     }
 
     return obj;
-}
+};
 
 /**
  * @method removeAppointStore 移除指定的键值
  * @param { String } key 键
  */
- export const removeAppointStore = ({ key }) => {
-     if(!key) return;
-     window.localStorage.removeItem(key);
- }
+export const removeAppointStore = ({ key }) => {
+    if(!key) return;
+    window.localStorage.removeItem(key);
+};
 
- /**
-  * @method removeAllStore 移除所有的localstorage存储
-  */
- export const removeAllStore = () => {
-     window.localStorage.clear();
- }
+/**
+ * @method removeAllStore 移除所有的localstorage存储
+ */
+export const removeAllStore = () => {
+    window.localStorage.clear();
+};
