@@ -1,12 +1,13 @@
-// module.exports = () => {
-//     return {
-//         input: {
-//             input: "../index.js",
-//         },
-//         output: {
-//             file: "../dist/"+"localstorage.js",
-//             format: "iife",
-//             name: "localstorage.js"
-//         }
-//     };
-// };
+module.exports = (options) => {
+    const { input, fileName, name} = options;
+    return {
+        input: {
+            input
+        },
+        output: {
+            file: fileName,
+            format: "iife",
+            name: name || 'localstoragejs'
+        }
+    };
+};
