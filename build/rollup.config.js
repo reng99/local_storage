@@ -1,4 +1,4 @@
-const uglify = require('rollup-plugin-uglify').uglify;
+// const uglify = require('rollup-plugin-uglify').uglify;
 
 module.exports = (options) => {
     const { input, fileName, name} = options;
@@ -6,12 +6,12 @@ module.exports = (options) => {
         input: {
             input,
             plugins: [
-                uglify()
+                // uglify()
             ]
         },
         output: {
             file: fileName,
-            format: "iife",
+            format: "umd",
             name: name || 'localstoragejs'
         }
     };

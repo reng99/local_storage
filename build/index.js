@@ -10,7 +10,7 @@ async function build(options){
 
 (async () => {
     try {
-        let inputFilePath = path.join(__dirname, '../app.js'); // uglify不识别index.js文件内的es6语法，暂时用app.js文件代替先
+        let inputFilePath = path.join(__dirname, '../index.js'); // uglify不识别index.js文件内的es6语法，暂时用app.js文件代替先
         let fileNamePath = path.join(__dirname, '../dist/localstorage.js');
         build(configFactory({
             input: inputFilePath,
