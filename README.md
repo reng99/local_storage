@@ -4,7 +4,7 @@
 
 ## local storage
 
-一个处理localstorage的实用包。
+一个处理localstorage的实用包。 链接: http://reng99.cc/local_storage/
 
 ### 使用方式一
 
